@@ -61,7 +61,8 @@ void qsort(int* data, int length) {
 
 void main() {
 
-	for (int i=0; i<=length; i++) printf("%2d ", data[i]); printf("\n");
+	for (int i=0; i<=length; i++) printf("%2d ", data[i]); 
+	printf("\n");
 
 	qsort((int*) data, length);
 	
