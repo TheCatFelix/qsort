@@ -13,27 +13,20 @@ void swap(int *a, int *b) {
 
 void build_heap(int* data, int length) {
 
+	if (length<1) return;
+
 	int i;
-        int n_swaps;
+        int s; // swaps this round
 
         do {
 
-	n_swaps = 0;
-	i = length;
+		s = 0;
+		i = length;
 
-               	do {
+               	do if (data[P(i)]<data[i]) swap(data+P(i), data+(s=i)); 
+		while (i-->=1); // 1 since top has no parent 
 
-                       	if ( data[P(i)] < data[i] ) {
-	
-               	                swap(data+P(i), data+i);
-                               	n_swaps++;
-                       	}
-
-               	i--;
-
-               	} while (i>=1); // 1 since top has no parent 
-
-       	} while (n_swaps>0);
+       	} while (s!=0);
 
 }
 
