@@ -1,38 +1,4 @@
 #include "stdio.h"
-/*
-int data[] = { 	86,
-		76,
-		92,
-		30,
-		84,
-		83,
-		94,
-		4,
-		32,
-		73,
-		16,
-		37,
-		83,
-		29,
-		13,
-		41,
-		7,
-		25,
-		24,
-		46 };
-int length = 19;
-
-int data[] = { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
-int length = 9;
-
-int data[] = { 2, 1, 5, 4, 3 };
-int length = 4;
-
-int data[] = { 1, 2 };
-int length = 1;
-*/
-int data[] = { 3, 2, 1 };
-int length = 2;
 
 void swap(int* a, int* b) {
 
@@ -60,8 +26,28 @@ void qsort(int* data, int length) {
 }
 
 void main() {
+	
+	int data[] = { 86, 76, 92, 30, 84, 83, 94, 4, 32, 73, 16, 37, 83, 29, 13, 41, 7, 25, 24, 46 };
+	int length = 19;
 
-	for (int i=0; i<=length; i++) printf("%2d ", data[i]); 
+	/*	
+	int data = { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
+	int length = 9;
+
+	int data[] = { 2, 1, 5, 4, 3 };
+	int length = 4;
+	
+	int data[] = { 1, 2 };
+	int length = 1;
+
+	int data[] = { 3, 2, 1 };
+	int length = 2;
+
+	int data[] = { 7 };
+	int length = 0;
+	*/
+
+	for (int i=0; i<=length; i++) printf("%2d ", data[i]);
 	printf("\n");
 
 	qsort((int*) data, length);
