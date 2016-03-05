@@ -15,10 +15,10 @@ void msort(int* data, int length) {
 	int r=length/2+1;
 
 	for (int i=0; i<=length; i++) {
-
+		
 		data[l] < data[r] ? (tmp[i] = data[l++]): (tmp[i] = data[r++]);
 		
-		if (r > length) data[--r] = data[length/2]
+		if (r > length) data[--r] = data[length/2];
 		if (l > length/2) data[--l] = data[length];
 
 	}
