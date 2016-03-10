@@ -16,7 +16,7 @@ void qsort(int* data, int length) {
 	int f = 0;		// first unsorted number
 	int l = length-1;	// last unsorted number
 
-	for (; f<l; ) data[f] > pivot ? swap(data+f, data+l--): f++;
+	while (f<l) data[f] > pivot ? swap(data+f, data+l--): f++;
 
 	data[f] > pivot ? swap(data+f, data+length): swap(data+(++f), data+length); 
 
