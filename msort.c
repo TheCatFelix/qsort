@@ -34,9 +34,9 @@ void main() {
         int length = 19;
 
         /*
- *         int data[] = {5, 3, 7, 9, 2, 6, 8, 1, 4 };
- *                 int length = 8;
- *                         */
+	int data[] = {5, 3, 7, 9, 2, 6, 8, 1, 4 };
+	int length = 8;
+	*/
 
         for (int i=0; i<=length; i++) printf("%2d ", data[i]);
         printf("\n");
