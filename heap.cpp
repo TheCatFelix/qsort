@@ -34,7 +34,7 @@ typedef class heap heap_t;
 heap::heap() {
 
 	length = 0;
-	data = (int*) malloc(sizeof(int));
+	data = 0;
 
 }
 
@@ -98,8 +98,6 @@ void heap::update_heap() {
 
         int i = 0;
 
-        swap(data, data+length--);
-
         do {
 
                 if (R(i) <= length &&\
@@ -132,7 +130,7 @@ int heap::remove_top() {
 	if (length<1) return *data;
 
 	int top = *data;
-	*data = *(data+length);
+	*data = *(data+length--);
 	update_heap();
 
 	return top;
