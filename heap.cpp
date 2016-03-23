@@ -34,7 +34,7 @@ typedef class heap heap_t;
 heap::heap() {
 
 	length = 0;
-	data = 0;
+	data = (int*) malloc(sizeof(int));
 
 }
 
